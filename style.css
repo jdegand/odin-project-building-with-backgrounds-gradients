@@ -1,0 +1,483 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#flex img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+#apple-logo {
+  width: 24px;
+  height: 24px;
+}
+
+#main {
+  background-image: url("your_verse_hero.jpg");
+  background-color: lightblue;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 538px;
+  position: relative;
+}
+
+#input {
+  /*
+  margin: 2px 12px 0 24px;
+  width: 111px;
+  height: 24px;
+  border-radius: 10px;
+  border-color: darkgray;
+  background-color: inherit;
+  outline-color: darkgray;
+  position: relative;
+  */
+  margin: 2px 24px 0 64px;
+  width: 120px;
+  height: 24px;
+  border-radius: 10px;
+  border-color: darkgray;
+  background-color: inherit;
+  outline-color: darkgray;
+  position: relative;
+}
+
+#nav-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 67%; /*65*/
+}
+
+#grid-nav {
+  /*
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  list-style-type: none;
+  justify-content: center;
+  background: gray;
+  */
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  /*background: #828c95;*/
+  margin: 0 10px;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e2124+2,595b5f+51 */
+/*background: rgb(30,33,36);*/ /* Old browsers */
+/*background: -moz-linear-gradient(top,  rgba(30,33,36,1) 2%, rgba(89,91,95,1) 51%);*/ /* FF3.6-15 */
+/*background: -webkit-linear-gradient(top,  rgba(30,33,36,1) 2%,rgba(89,91,95,1) 51%);*/ /* Chrome10-25,Safari5.1-6 */
+/*background: linear-gradient(to bottom,  rgba(30,33,36,1) 2%,rgba(89,91,95,1) 51%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2124', endColorstr='#595b5f',GradientType=0 );*/ /* IE6-9 */
+
+background-image: linear-gradient(#8a8a8a, #686868 50%, #595959 50%, #757575);
+
+}
+
+#grid-nav li {
+  display: flex;
+  color: white;
+  height: 38px;
+  width: 107px;
+  border-right: 1px solid #565656;
+  border-spacing: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#grid-nav li:last-child {
+  border-right: none;
+}
+
+#grid-nav li:hover {
+  background-color: rgb(30,31,36);
+}
+
+#grid-nav li:last-child:hover {
+  background-color: transparent;
+}
+
+#search-icon {
+  filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+  /* https://codepen.io/sosuke/pen/Pjoqqp */
+  position: absolute;
+  left: 777px;
+  z-index: 10;
+}
+
+#main-text {
+  color: white;
+  position: absolute;
+  top: 180px;
+  left: 300px;
+  margin: 0 auto;
+}
+
+#headline {
+  font-size: 65px;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+#headline2 {
+  font-size: 42px;
+  margin-left: -30px;
+  font-weight: 200;
+}
+
+#headline3 {
+  margin-top: 16px;
+  margin-left: 140px;
+  position: relative;
+  font-size: 24px;
+}
+
+#text-span {
+  margin-left: 20px;
+}
+
+
+#play-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -13px;
+}
+
+#flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+#footer {
+  display: flex;
+  margin: 10px;
+}
+
+#flex-column {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-left: 160px;
+  line-height: 2.5;
+}
+
+#flex-row {
+  display: flex;
+  font-size: 12px;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+#flex-row a {
+  margin: 0 5px;
+}
+
+#usa {
+  width: 16px;
+  height: 16px;
+  background: none;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+  #input {
+    /*
+    margin: 2px 12px 0 24px;
+    width: 111px;
+    height: 24px;
+    border-radius: 10px;
+    border-color: darkgray;
+    background-color: inherit;
+    outline-color: darkgray;
+    position: relative;
+    */
+    margin: 2px 6px 0 10px;
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    border-color: darkgray;
+    background-color: inherit;
+    outline-color: darkgray;
+    position: relative;
+  }
+
+  #nav-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 70%; /*65*/
+  }
+
+  #search-icon {
+    filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    position: absolute;
+    left: 725px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #search-icon {
+    filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    position: absolute;
+    left: 625px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  #flex-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 0;
+    line-height: normal;
+  }
+
+  #flex-row {
+    display: flex;
+    font-size: 10px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  #nav-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%; /*65*/
+  }
+
+  #input {
+    display: none;
+  }
+
+  #search-icon {
+    filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    position: absolute;
+    left: 650px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  #main-text {
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    margin: 0 auto;
+  }
+
+  #headline {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  #headline2 {
+    font-size: 28px;
+    margin-left: 0;
+    font-weight: 200;
+  }
+
+  #headline3 {
+    margin-top: 16px;
+    margin-left: 0;
+    position: relative;
+    font-size: 24px;
+  }
+
+  #text-span {
+    margin-left: 0;
+  }
+
+  #play-btn {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    left: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #flex-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 0;
+    line-height: normal;
+  }
+
+  #flex-row {
+    display: flex;
+    font-size: 10px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  #nav-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%; /*65*/
+  }
+
+  #input {
+    display: none;
+  }
+
+  #search-icon {
+    filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    position: absolute;
+    left: 525px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  #main-text {
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    margin: 0 auto;
+  }
+
+  #headline {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  #headline2 {
+    font-size: 28px;
+    margin-left: 0;
+    font-weight: 200;
+  }
+
+  #headline3 {
+    margin-top: 16px;
+    margin-left: 0;
+    position: relative;
+    font-size: 24px;
+  }
+
+  #text-span {
+    margin-left: 0;
+  }
+
+  #play-btn {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #flex-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 0;
+    line-height: normal;
+  }
+
+  #flex-row {
+    display: flex;
+    font-size: 10px;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  #nav-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%; /*65*/
+  }
+
+  #input {
+    display: none;
+  }
+
+  #search-icon {
+    filter: invert(97%) sepia(3%) saturate(898%) hue-rotate(236deg) brightness(126%) contrast(100%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    position: absolute;
+    left: 455px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  #main-text {
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    margin: 0 auto;
+  }
+
+  #headline {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 100;
+  }
+
+  #headline2 {
+    font-size: 28px;
+    margin-left: 0;
+    font-weight: 200;
+  }
+
+  #headline3 {
+    margin-top: 16px;
+    margin-left: 0;
+    position: relative;
+    font-size: 24px;
+  }
+
+  #text-span {
+    margin-left: 0;
+  }
+
+  #play-btn {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0px;
+    left: 70px;
+  }
+}
