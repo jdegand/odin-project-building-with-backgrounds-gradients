@@ -2,3 +2,7 @@
 Odin Project HTML/CSS - Building with backgrounds and gradients exercise
 
 [Odin Project](https://theodinproject.com/courses/html-and-css/lessons/building-with-backgrounds-and-gradients)
+
+[Original Apple Page](https://web.archive.org/web/20140301004610/http://www.apple.com/)
+
+![Screenshot](screenshot.png)
